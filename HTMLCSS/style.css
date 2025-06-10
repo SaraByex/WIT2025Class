@@ -1,0 +1,53 @@
+div{
+    /* properties: value; */
+    background-color: brown;
+    width: 450px;
+    height: 100px;
+    margin: 20px;
+}
+
+#firstsection{
+    text-align: center;
+    border: 1px solid blue;
+}
+
+.studentsection{
+    border: 5px dotted black;
+    border-radius: 8px;
+}
+
+section{
+    border: 2px dotted pink;
+    border-radius: 8px;
+  
+}
+
+/* chaining with space */
+section .secchild{
+    color:chocolate;
+}
+/* chaining without space */
+section#firstsection{
+border: 2px dotted gold;
+}
+
+#secondsection{
+    display: inline;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: aqua;
+    color:blue;
+}
+
+th{
+    padding: 15px 20px;
+}
+
+tbody tr:nth-child(even){
+    background-color: beige;
+}
