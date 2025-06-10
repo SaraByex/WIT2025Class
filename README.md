@@ -1,1 +1,2 @@
-# WIT2025Class
+# WIT2025SpringCohort
+Assignments
