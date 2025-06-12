@@ -7,43 +7,78 @@
       scroll-behavior: smooth;
     }
 
-    .sidebar {
-      position: sticky;
-      top: 0;
-      height: 100vh;
-      background-color: var(--light-purple);
-      padding: 1rem;
-      overflow-y: auto;
-      z-index: 1020;
-    }
+.sidebar {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  padding: 20px 15px;
+  background-color: #f8f9fa;
+  border-right: 1px solid #ddd;
+  overflow-y: auto;
+}
 
-    .profile-photo {
-      width: 100%;
-      border-radius: 5px;
-    }
+.profile-photo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 7%;
+  margin: 0 auto 12px;
+  display: block;
+  
+}
 
-    .nav-link {
-      color: var(--main-purple);
-    }
+.nav-link {
+  font-size: 1rem;
+  padding: 10px;
+  color: #333;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+}
 
-    .nav-link:hover, .nav-link.active {
-      font-weight: bold;
-      color: #fff;
-      background-color: var(--main-purple);
-      border-radius: 0.375rem;
-      padding-left: 1rem;
-    }
+.nav-link:hover, .nav-link.active {
+  background-color: var(--light-purple);
+  color: var(--main-purple);
+}
 
-    section {
-      padding: 2rem 1rem;
+@media (max-width: 767.98px) {
+  .sidebar {
+    position: relative;
+    height: auto;
+    border-right: none;
+    padding: 10px;
+  }
+  .profile-photo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .nav-link:hover, .nav-link.active {
+  background-color: var(--light-purple);
+  color: var(--main-purple);
+}
+}
+
+  section {
+      padding: 0;
+      margin: 0;
       border-bottom: 1px solid #ccc;
-      min-height: 100vh;
+      min-height: 50vh;
+      background-color: var(--light-purple);;
+      background-blend-mode: lighten;
     }
 
     .carousel-item img {
       width: 100%;
       height: auto;
       border-radius: 1rem;
+    }
+
+    .wrap-image {
+    float: right;         
+    margin-left: 15px;
+    margin-bottom: 10px;
+    width: auto;         
+    height: auto;
     }
 
     h1 {
@@ -60,8 +95,57 @@
       background-color: #5a32a3;
     }
 
-    linkedin{
-      href: url(www.linkedin.com/in/
-sarah-byekwaso)}
-Vanity URL name
+  .carousel-caption h5 {
+    font-size: 3rem;
+    color: #ff2807; 
+  }
+
+  .carousel-caption p {
+    font-size: 2.5rem;
+    color: black;
+  }
+
+  /* Limit carousel image height */
+#projectCarousel img {
+  max-height: 400px; /* Adjust height as needed */
+  object-fit: cover;
+}
+
+/* Style the text background for readability */
+.carousel-caption {
+  background-color: rgba(255, 255, 255, 0.75); /* light background*/
+  color: #000; /* dark text for contrast */
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+/* Center the captions on all devices */
+.carousel-caption h5,
+.carousel-caption p {
+  margin-bottom: 0.5rem;
+}
+/* for small screens use @media queries */
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
+}
+
+
+  .contact-info i {
+    color: #0e76a8; /* LinkedIn Blue */
+    margin-right: 8px;
+  }
+
+  .contact-info a {
+    color: #333;
+    text-decoration: none;
+  }
+
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
 
