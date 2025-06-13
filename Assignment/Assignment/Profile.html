@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
-  <link rel="stylesheet" href="Class Assignment.css">
+  <link rel="stylesheet" href="Profile.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <title>My Profile</title>
@@ -15,7 +15,7 @@
     <div class="row">
       <nav class="col-12 col-md-3 sidebar text-center">
         <div class="card mb-4">
-          <img src="/others/images/SaraPic.jpg" alt="My photo" class="profile-photo">
+          <img src="/others/images/SaraPic.jpg" alt="My photo" class="profile-photo mt-5 h-auto">
           <div class="card-body">
             <h5 class="card-title">Sarah Byekwaso</h5>
             <p class="card-text">Full Stack Web Developer</p>
@@ -25,7 +25,7 @@
           <a class="nav-link" href="#about"><i class="fas fa-user me-2"></i>About</a>
           <a class="nav-link" href="#projects"><i class="fas fa-laptop-code me-2"></i>Projects</a>
           <a class="nav-link" href="#skills"><i class="fas fa-tools me-2"></i>Skills</a>
-          <a class="nav-link" href="#contact"><i class="fas fa-envelope me-2"></i>Contact</a>
+          <a class="nav-link" href="#contact"><i class="fas fa-envelope me-2"></i>Contact Me</a>
           <a class="nav-link" href="#resume"><i class="fas fa-file-alt me-2"></i>Resume</a>
         </nav>
       </nav>
@@ -33,22 +33,15 @@
       <main class="col-12 col-md-9">
 <!-- about me -->
         <section id="about">
-          <div class="text-center"><h1 class="fs-2 fs-md-1">About Me</h1></div>
-            <div class ="wrapped immage"><img src="/others/images/navigate.webp" alt="design photo" class="wrap-image">
-            <p class="fs-6 fs-md-5 fs-lg-4">My name is Sarah Byekwaso, a full stack web developer with a unique blend of business, design, and technical skills. I began my journey in Uganda, where I developed a strong foundation in business and customer experience as a Client Relations Manager. I hold a Bachelor's degree in Business Administration with a major in Accounting, and I have always had a creative side — spending time after work learning Adobe Illustrator and Photoshop to explore graphic design.
-            </p>
-            <p class="fs-6 fs-md-5 fs-lg-4"> After relocating to Canada, I took the bold step to transition into the tech industry. I joined a Women in Technology bootcamp, where I trained as a full stack web developer. There, I gained hands-on experience with modern tools. I have since designed and built responsive web applications, focusing on accessibility, clean code, and user-friendly design.
-            </p>
-            <p class="fs-6 fs-md-5 fs-lg-4"> My background in business and client engagement gives me an edge in understanding user needs, communicating effectively with teams, and delivering meaningful digital solutions. I am passionate about using technology to solve real-world problems, especially in ways that support and empower communities.
-            </p>
-            <p class="fs-6 fs-md-5 fs-lg-4">I am currently building my personal portfolio, exploring freelance opportunities, and continuing to grow as a developer. Whether through design, code, or client collaboration, I bring purpose, passion, and people skills to every project I work on.
-            </p>
+          <div><h1 class="text-center mb-4" class="fs-2 fs-md-1">About Me</h1></div>
+            <div class ="wrapped image mb-15"><img src="/others/images/navigate.webp" alt="design photo" class="wrap-image">
+              <p class="mx-4">With a unique blend of business, design, and technical skills. I have <strong>designed and built responsive Web Applications</strong>, focusing on <span class="text-danger ">accessibility, clean code, and user-friendly design.</span> I bring purpose, passion, and people skills to every project I work on.</p>
             </div>
         </section>
 
 <!-- projects -->
         <section id="projects">
-          <div><h1 class="text-center">Projects</h1></div>
+          <div><h1 class="text-center mb-4">Projects</h1></div>
           <div id="projectCarousel" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
@@ -73,7 +66,6 @@
                   <p>This game will relax your mind from the days heavy duties</p>
                 </div>
               </div>
-<!-- projects -->
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#projectCarousel" data-bs-slide="prev">
               <span class="carousel-control-prev-icon"></span>
@@ -86,124 +78,124 @@
 
 <!-- skills -->
         <section id="skills" class="py-4">
-          <div class="text-center mb-4">
-            <h1 class="m-0">Skills</h1>
+          <div>
+            <h1 class="text-center mb-4 m-0">Skills</h1>
           </div>
 
-          <div class="row text-center">
+          <ul class="row text-center">
                       
-            <div class="col-6 col-md-4 mb-3">
+            <li class="col-6 col-md-4 mb-3">
               <i class="fab fa-html5 fa-2x text-danger"></i>
               <p>HTML</p>
-            </div>
+            </li>
 
-            <div class="col-6 col-md-4 mb-3">
+            <li class="col-6 col-md-4 mb-3">
               <i class="fab fa-css3-alt fa-2x text-primary"></i>
               <p>CSS</p>
-            </div>
+            </li>
 
-            <div class="col-6 col-md-4 mb-3">
+            <li class="col-6 col-md-4 mb-3">
               <i class="fab fa-js-square fa-2x text-warning"></i>
               <p>JavaScript</p>
-            </div>
+            </li>
 
-            <div class="col-6 col-md-4 mb-3">
+            <li class="col-6 col-md-4 mb-3">
               <i class="fab fa-python fa-2x text-info"></i>
               <p>Python</p>
-            </div>
+            </li>
 
-            <div class="col-6 col-md-4 mb-3">
+            <li class="col-6 col-md-4 mb-3">
               <i class="fab fa-bootstrap fa-2x text-purple"></i>
               <p>Bootstrap</p>
-            </div>
+            </li>
 
-            <div class="col-6 col-md-4 mb-3">
+            <li class="col-6 col-md-4 mb-3">
               <i class="fab fa-react fa-2x text-cyan"></i>
               <p>React</p>
-            </div>
+            </li>
 
-            <div class="col-6 col-md-4 mb-3">
+            <li class="col-6 col-md-4 mb-3">
               <i class="fab fa-node fa-2x text-success"></i>
               <p>Node.js</p>
-            </div>
+            </li>
 
-            <div class="col-6 col-md-4 mb-3">
+            <li class="col-6 col-md-4 mb-3">
               <i class="fas fa-database fa-2x text-secondary"></i>
               <p>SQL / Firebase</p>
-            </div>
+            </li>
 
-            <div class="col-6 col-md-4 mb-3">
+            <li class="col-6 col-md-4 mb-3">
               <i class="fas fa-code fa-2x text-dark"></i>
               <p>VS Code / GitHub</p>
-            </div>
+            </li>
 
-            <div class="col-6 col-md-4 mb-3">
+            <li class="col-6 col-md-4 mb-3">
               <i class="fas fa-pencil-ruler fa-2x text-warning"></i>
               <p>Figma / Power Platform</p>
-            </div>
+            </li>
 
-            <div class="col-6 col-md-4 mb-3">
+            <li class="col-6 col-md-4 mb-3">
               <i class="fas fa-plug fa-2x text-success"></i>
               <p>API Integration</p>
-            </div>
+            </li>
 
-              <div class="col-6 col-md-4 mb-3">
+              <li class="col-6 col-md-4 mb-3">
               <i class="fas fa-photo-video fa-2x text-danger"></i>
               <p>Adobe Photoshop</p>
-            </div>
+              </li>
 
-            <div class="col-6 col-md-4 mb-3">
+            <li class="col-6 col-md-4 mb-3">
               <i class="fas fa-paint-brush fa-2x text-warning"></i>
               <p>Adobe Illustrator</p>
-            </div>
+            </li>
 
-            <div class="col-6 col-md-4 mb-3">
+            <li class="col-6 col-md-4 mb-3">
               <i class="fas fa-file-excel fa-2x text-success"></i>
               <p>Advanced Excel</p>
-            </div>
+            </li>
         
-          </div>
+          </ul>
         </section>
 
 <!-- contact -->
         <section id="contact">
-          <div class="text-center">
-            <h1>Contact</h1>
+          <div>
+            <h1 class="text-center mb-4">Contact Me</h1>
           </div>
 
-          <div class="contact-info" style="line-height: 2;">
+          <div class="contact-info" style="line-height: 3;">
             <p>
               <i class="fas fa-envelope"></i>
               Email: <a href="mailto:sarabyex@outlook.com">sarabyex@outlook.com</a>
             </p>
-
             <p>
-              <i class="fab fa-linkedin"></i>
-              LinkedIn:
+              <i class="fab fa-linkedin"></i>LinkedIn:
               <a href="https://www.linkedin.com/in/sarah-byekwaso">sarah-byekwaso</a>
             </p>
             <p>
               <i class="fas fa-phone"></i>Phone: <a href="tel:3688864141">368-886-4141</a>
             </p>
-            <p>
-              <i class="fas fa-map-marker-alt"></i>Calgary, Alberta
-            </p>
-        </div>
+                 <i class="fab fa-github"></i>
+                   <a href="https://github.com/SaraByex">GitHub</a>
+            <p><i class="fas fa-map-marker-alt"></i>Calgary, Alberta</p>
+          </div>
         </section>
 
 <!-- resume -->
         <section id="resume">
-          <div class="text-center"><h1>Resume</h1></div>
-          <p>You can view or download my resume here:</p>
-          <a href="/others/Resume - Sarah Byekwaso.pdf" target="_blank" class="btn btn-purple">View Resume</a>
+          <div class="text-center mb-4"><h1>Resume</h1></div>
+          <p>View or download my resume<i></i></p>
+          <a href="/others/Resume - Sarah Byekwaso.pdf" target="_blank" class="btn btn-purple " >View Resume</a>
         </section>
       </main>
     </div>
   </div>
-  
-  
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
+<footer class="footer-purple pt-0 pb-0 mt-0" style="background-color: #e9d8fd;;"> <div class="text-center">
+      <small>&copy; 2025 Sarah Byekwaso. All rights reserved.</small>
+    </div>
+  </div></footer>
 </html>
 
