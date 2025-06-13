@@ -61,6 +61,8 @@
   section {
       padding: 0;
       margin: 0;
+      margin-left: -15px;
+      margin-right: -15px;
       border-bottom: 1px solid #ccc;
       min-height: 60vh;
       background-color: var(--light-purple);;
@@ -85,6 +87,8 @@
 
     h1 {
       background-color: var(--main-purple);
+      padding-top: 15px;
+      padding-bottom: 15px;
       color: white;
     }
 
@@ -105,15 +109,14 @@
   .carousel-caption p {
     font-size: 2.5rem;
     color: black;
+    margin-bottom: 0.2rem;
   }
 
-  /* Limit carousel image height */
-  #projectCarousel img {
-  max-height: 400px; /* Adjust height as needed */
+   #projectCarousel img {
+  max-height: 450px; 
   object-fit: cover;
   }
 
-/* Style the text background for readability */
   .carousel-caption {
   background-color: rgba(255, 255, 255, 0.75); /* light background*/
   color: #000; /* dark text for contrast */
@@ -123,10 +126,6 @@
   margin: 0 auto;
 }
 
-/* Center the captions on all devices */
-  .carousel-caption h5, .carousel-caption p {
-  margin-bottom: 0.2rem;
-}
 /* for small screens use @media queries */
 @media (max-width: 768px) {
   .carousel-caption {
@@ -134,6 +133,10 @@
     padding: 0.5rem;
   }
 }
+.contact-info {
+    line-height: 5;
+    color: #333;
+  }
 
   .contact-info i {
     color: #0e76a8; 
@@ -141,8 +144,9 @@
   }
 
   .contact-info a {
-    color: #333;
+    color: #0e76a8;
     text-decoration: none;
+    font-style: italic;
   }
 
   .contact-info a:hover {
@@ -150,9 +154,8 @@
   }
 
   #contact .contact-info {
-    margin-left: 30px;
-
-}
+    margin-left: 50px;
+  }
   #about p {font-family: Verdana, Geneva, Tahoma, sans-serif;
    font-style:normal;
    font-size:larger;
@@ -160,5 +163,9 @@
   }
  #skills ul {
   margin-left: 30px;
-  margin-right: 30px;#e9d8fd;
+  margin-right: 30px;
+ }
+
+  #resume {
+    align-items: center;
  }
